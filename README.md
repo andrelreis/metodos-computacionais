@@ -17,40 +17,55 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 
 ## Tópicos do curso
 
-* Noções básicas de Python
 * Operações básicas de Vetores e Matrizes
 * Soluções de sistemas lineares
 * Soluções de sistemas não lineares
 * Transformada de Fourier
 * Interpolação numérica
-* Derivada e integração numéricas
-* Solução numérica de equações diferenciais
+* Integração numéricas
 * Aplicações na Geofísica
 
 ## Conteúdo didático computacional
 
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
-- Noções básicas de First_steps_Python
-  - [ ] Comandos básicos [`pythonic_first_steps.ipynb`]
-  - [ ] Noções de Álgebra Linear em Python
+**Basic operations vector**
+
+**Basic operations Matrix**
+
+**Fourier Transform**
+
+**Structured matrices**
+
+**Numerical solutions of Linear Systems**
+
+**Eigenvalues and Eigenvectors**
+
+**Singular values decomposition**
+
+**Numerical solutions of nonlinear systems**
+
+**Interpolation and curve fitting**
+
+**Numerical integration**
+
 
 
 ## Referências bibliográficas
 
-* Aster, R. C., Borchers, B., and Thurber, C. H. 2005. *Parameter Estimation and Inverse Problems* , Academic Press Inc.
+* Aster, R. C., Borchers, B., and Thurber, C. H. 2005. *Parameter Estimation and Inverse Problems*. Academic Press Inc.
 
 * Bard, Y. 1974. *Nonlinear parameter estimation*. Academic Press Inc.
 
+* Golub, G. H. and Van Loan, C. F. 2013. *Matrix computations*. Johns Hopkins University Press.
+
 * Kelley, C. T. 1999. *Iterative methods for optimization: Raleigh*. SIAM.
+
+* Kiusalaas, J. 2013. *Numerical methods in engineering with Python 3*. Cambridge University Press.
 
 * Menke, W. 1989. *Geophysical data analysis: Discrete inverse theory*. Academic Press Inc.
 
 * Parker, R. L. 1977. *Understanding inverse theory*. Ann. Rev.Earth. Planet. Sci., v. 5, p. 35-64.
-
-* Tikhonov., A. N. e Arsenin, V. Y. 1977. *Solutions of ill-posed problems*. John Wiley and Sons.
-
-* Periódicos da área
 
 ## Material
 
