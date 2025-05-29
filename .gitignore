@@ -38,7 +38,7 @@ manuscript/output/
 *.out
 *.lot
 *.idx
-*.pdf
+#.pdf
 #.bib
 #.png
 *.syx
@@ -46,4 +46,3 @@ manuscript/output/
 *.eps
 *.odp
 *~
-~lock.0. Apresentacao_curso.odp#
