@@ -6,7 +6,7 @@ Disciplina obrigatória ministrada ao Programa de Pós-Graduação em Geofísica
 
 **E-mails:** reisandreluis@on.br / andre.reis@gmail.com
 
->**Aviso:** O material disponibilizado neste repositório está em constante desenvolvimento e, portanto, o Observatório Nacional e a coordenação de pós-graduação não possuem qualquer responsabilidade sobre este conteúdo. As aulas não serão gravadas.
+>**Aviso:** O material disponibilizado neste repositório está em constante desenvolvimento e, portanto, o Observatório Nacional e a coordenação de pós-graduação não possuem qualquer responsabilidade sobre este conteúdo. As aulas não serão gravadas. Todo o material didático e computacional está localizado na pasta 'Content'.
 
 ## Ementa
 
@@ -29,27 +29,31 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
-**Basic operations vector**
+**Introdução**
+  - [x] Templates para testes e funções [`0a. templates.ipynb`]
+  - [x] Notação para vetores e matrizes [`0b. notacoes.ipynb`]
 
-**Basic operations Matrix**
+**Operações com vetores**
 
-**Fourier Transform**
+**Operações com matrizes**
 
-**Structured matrices**
+**Transformada de Fourier**
 
-**Numerical solutions of Linear Systems**
+**Estruturas matriciais**
 
-**Eigenvalues and Eigenvectors**
+**Solução numérica de sistemas lineares**
 
-**Singular values decomposition**
+**Autovalores e autovetores**
 
-**Numerical solutions of nonlinear systems**
+**Decomposição em valores singulares**
 
-**Interpolation and curve fitting**
+**Soluções numéricas de sistemas não-lineares**
 
-**Numerical integration**
+**Interpolação e ajuste de curva**
 
+**Derivação numérica**
 
+**Integração numérica**
 
 ## Referências bibliográficas
 

@@ -1,0 +1,294 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "7555c85a",
+   "metadata": {},
+   "source": [
+    "# First Steps with Python Coding"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7df7ae5e",
+   "metadata": {},
+   "source": [
+    "## Why Python?\n",
+    "\n",
+    "Its name was inspired by the British comedy group [Monty Python](https://en.wikipedia.org/wiki/Monty_Python). [Python](https://www.python.org/) is a **high-level**, **dynamic**, **interpreted**, **interactive**, and **object-oriented** language. The syntax can be easy to pick up whether you are experienced with other programming languages or you are a first-time programmer. Its flexibility provides you to do small or big works. You can write basic programs or large-scale complex solutions. Python is Open-source making it freely, usable and distributable, even for commercial purposes. For this reason, you can find Python everywhere of computer programming. For example, Python is the base for many popular websites such as Reddit, YouTube, and Dropbox, to name a few. \n",
+    "\n",
+    "There are many applications of Python language. [Python Package Index (PyPI)](https://pypi.org/) hosts many modules for Python language. Standard libraries and the contribution of many developers allow for endless possibilities of application, such as: \n",
+    "\n",
+    "* Web and Internet development\n",
+    "* Database access\n",
+    "* Desktop GUIs\n",
+    "* Scientific and numerical solutions\n",
+    "* Education\n",
+    "* Network programming\n",
+    "* Software and Game development\n",
+    "\n",
+    "There is a lot to learn and to know about many ecosystems of Python. Here I am going to introduce some basic commands in Python programming, including some tutorials that you can resort. "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2b4c0bf5",
+   "metadata": {},
+   "source": [
+    "## The Anaconda distribution\n",
+    "\n",
+    "Anaconda was founded 2012 out of the need to bring Python into business data analytics. The open-source community lacked an entity that could organize and collectivize it to maximize its impact. Anaconda has provided value to students learning Python and data science. Their repositories features over a thousand open-source data science and machine learning packages, compiled for all major operating systems and architectures. For this reason Python ecosystem has significantly expands, being the most popular programming language used today. Download here for free the [Anaconda installers](https://www.anaconda.com/download). \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c23d1a1f",
+   "metadata": {},
+   "source": [
+    "## Basic Python Syntax \n",
+    "\n",
+    "Here you are going to see several important components of Python syntax such as :\n",
+    "    \n",
+    "* Comments\n",
+    "* Variables\n",
+    "* Keywords\n",
+    "* Built-in data types\n",
+    "* Conditional statements\n",
+    "* Loops \n",
+    "* Functions \n",
+    "* Modules"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "797fd776",
+   "metadata": {},
+   "source": [
+    "### Comments"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "74f328f3",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5a2ce174",
+   "metadata": {},
+   "source": [
+    "### Variables"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f7315e4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1cfd0350",
+   "metadata": {},
+   "source": [
+    "### Keywords"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5470d7cf",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "638803a0",
+   "metadata": {},
+   "source": [
+    "### Built-in data types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "efda6977",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6905b407",
+   "metadata": {},
+   "source": [
+    "### Conditional statements"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cbc9f57a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5dbf5fdc",
+   "metadata": {},
+   "source": [
+    "### Loops"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "03fbd6b7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2da86020",
+   "metadata": {},
+   "source": [
+    "### Functions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e83c5c19",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "52a897ee",
+   "metadata": {},
+   "source": [
+    "### Modules"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "42278920",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "9eb2dda9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c = np.empty(3,dtype=float)\n",
+    "a = np.array([1,2,4])\n",
+    "b = np.array([4,3,2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "b7261300",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for i in range(3):\n",
+    "    j = (i + 1) % 3\n",
+    "    k = (i + 2) % 3\n",
+    "    c[i] = a[j]*b[k] - a[k]*b[j]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "5c2d57b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-8. 14. -5.]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "8c6adcfc-5095-4beb-b71e-df78edb2205a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c_numpy = np.cross(a,b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "a20456ae-3287-4c3a-a901-44f2fb29fa75",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-8 14 -5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (c_numpy)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2390ca28-1bd5-46d9-95de-37db3d2c5a41",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
