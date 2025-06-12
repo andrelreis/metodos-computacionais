@@ -30,30 +30,32 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
 **Introdução**
-  - [x] Templates para testes e funções [`0a. templates.ipynb`]
-  - [x] Notação para vetores e matrizes [`0b. notacoes.ipynb`]
+  - [x] Notação para vetores e matrizes [`0. notacoes.ipynb`]
 
-**Operações com vetores**
+**1. Operações com vetores**
+  - [x] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
+  - [x] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
+  - [x] Produto escalar entre vetores [`1c. vetor-vetor.ipynb`]
 
-**Operações com matrizes**
+**2. Operações com matrizes**
 
-**Transformada de Fourier**
+**3. Transformada de Fourier**
 
-**Estruturas matriciais**
+**4. Estruturas matriciais**
 
-**Solução numérica de sistemas lineares**
+**5. Solução numérica de sistemas lineares**
 
-**Autovalores e autovetores**
+**6. Autovalores e autovetores**
 
-**Decomposição em valores singulares**
+**7. Decomposição em valores singulares**
 
-**Soluções numéricas de sistemas não-lineares**
+**8. Soluções numéricas de sistemas não-lineares**
 
-**Interpolação e ajuste de curva**
+**9. Interpolação e ajuste de curva**
 
-**Derivação numérica**
+**10. Derivação numérica**
 
-**Integração numérica**
+**11. Integração numérica**
 
 ## Referências bibliográficas
 
