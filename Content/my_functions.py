@@ -55,7 +55,7 @@ def scalar_vec_complex(a,x,check_input=True):
 
     '''
     if check_input is True:
-        assert isinstance(a, (complex,float, int)), 'a must be a scalar'
+        assert isinstance(a, (complex,float,int)), 'a must be a scalar'
         assert type(x) == np.ndarray, 'x must be a numpy array'
         assert x.ndim == 1, 'x must have ndim = 1'
 
@@ -64,3 +64,20 @@ def scalar_vec_complex(a,x,check_input=True):
 
     result = result_real + 1j*result_imag
     return result
+
+# Dot product
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
