@@ -64,20 +64,3 @@ def scalar_vec_complex(a,x,check_input=True):
 
     result = result_real + 1j*result_imag
     return result
-
-# Dot product
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

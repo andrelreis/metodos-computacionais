@@ -113,3 +113,109 @@ def dot_complex(x, y, check_input=True):
     # Check input here
     # Complete here
     return result
+
+# Outer product
+def outer_real_simple(x, y, check_input=True):
+    '''
+    Compute the outer product of x and y, where
+    x in R^N and y in R^M. The imaginary parts are ignored.
+
+    The code uses a simple "for" to iterate on the arrays.
+
+    Parameters
+    ----------
+    x, y : arrays 1D
+        Vectors with real elements.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array 2d
+        Outer product of x and y.
+    '''
+    # Check input here
+    # Complete here
+    return result
+
+
+def outer_real_row(x, y, check_input=True):
+    '''
+    Compute the outer product of x and y, where
+    x in R^N and y in R^M. The imaginary parts are ignored.
+
+    The code use a single for to compute the rows of 
+    the resultant matrix as a scalar-vector product.
+
+    This code uses the function 'scalar_vec_real'.
+
+    Parameters
+    ----------
+    x, y : arrays 1D
+        Vectors with real elements.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array 2d
+        Outer product of x and y.
+    '''
+    # Check input here
+    # Complete here
+
+    return result
+
+
+def outer_real_column(x, y, check_input=True):
+    '''
+    Compute the outer product of x and y, where
+    x in R^N and y in R^M. The imaginary parts are ignored.
+
+    The code use a single for to compute the columns of 
+    the resultant matrix as a scalar-vector product.
+
+    This code uses the function 'scalar_vec_real'.
+
+    Parameters
+    ----------
+    x, y : arrays 1D
+        Vectors with real elements.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array 2d
+        Outer product of x and y.
+    '''
+    # Check input here
+    # Complete here
+
+    return result
+
+
+def outer_complex(x, y, check_input=True):
+    '''
+    Compute the outer product of x and y, where x and y are complex vectors.
+
+    Parameters
+    ----------
+    x, y : 1D arrays
+        Complex vectors.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : 2D array
+        Outer product of x and y.
+    '''
+    # Check input here
+    # Complete here
+
+    return result
