@@ -35,27 +35,31 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 **1. Operações com vetores**
   - [x] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
   - [x] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
-  - [x] Produto escalar entre vetores [`1c. vetor-vetor.ipynb`]
+  - [x] Produto escalar entre vetores [`1c. dot-product.ipynb`]
+  - [x] Produto externo entre vetores [`1d. outer-product.ipynb`]
+  - [x] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
 
 **2. Operações com matrizes**
 
-**3. Transformada de Fourier**
+**3. Normas de vetores e matrizes**
 
 **4. Estruturas matriciais**
 
-**5. Solução numérica de sistemas lineares**
+**5. Transformada de Fourier**
 
-**6. Autovalores e autovetores**
+**6. Solução numérica de sistemas lineares**
 
-**7. Decomposição em valores singulares**
+**7. Autovalores e autovetores**
 
-**8. Soluções numéricas de sistemas não-lineares**
+**8. Decomposição em valores singulares**
 
-**9. Interpolação e ajuste de curva**
+**9. Soluções numéricas de sistemas não-lineares**
 
-**10. Derivação numérica**
+**10. Interpolação e ajuste de curva**
 
-**11. Integração numérica**
+**11. Derivação numérica**
+
+**12. Integração numérica**
 
 ## Referências bibliográficas
 
