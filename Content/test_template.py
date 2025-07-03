@@ -50,7 +50,7 @@ def test_scalar_vec_complex_compare_numpy():
     scalar = rng.random() + 1j*rng.random()
     vector = rng.random(13) + rng.random(13)*1j
     
-    output = temp.scalar_vec_complex(scalar, vector, check_input=True)
+    output = tmp.scalar_vec_complex(scalar, vector, check_input=True)
     reference = scalar*vector
     
     aae(output, reference, decimal=10)
@@ -61,7 +61,7 @@ def test_dot_real_not_1D_arrays():
     vector_1 = np.ones((3,2))
     vector_2 = np.arange(4)
     with pytest.raises(AssertionError):
-        temp.dot_real(vector_1, vector_2)
+        tmp.dot_real(vector_1, vector_2)
 
 
 def test_dot_real_different_sizes():
@@ -69,7 +69,7 @@ def test_dot_real_different_sizes():
     vector_1 = np.linspace(5,6,7)
     vector_2 = np.arange(4)
     with pytest.raises(AssertionError):
-        temp.dot_real(vector_1, vector_2)
+        tmp.dot_real(vector_1, vector_2)
 
 
 def test_dot_real_known_values():
@@ -77,7 +77,7 @@ def test_dot_real_known_values():
     vector_1 = 0.1*np.ones(10)
     vector_2 = np.linspace(23.1, 52, 10)
     reference_output = np.mean(vector_2)
-    computed_output = temp.dot_real(vector_1, vector_2)
+    computed_output = tmp.dot_real(vector_1, vector_2)
     aae(reference_output, computed_output, decimal=10)
 
 
@@ -89,7 +89,7 @@ def test_dot_real_compare_numpy_dot():
     vector_1 = rng.random(13)
     vector_2 = rng.random(13)
     reference_output_numpy = np.dot(vector_1, vector_2)
-    computed_output = temp.dot_real(vector_1, vector_2)
+    computed_output = tmp.dot_real(vector_1, vector_2)
     aae(reference_output_numpy, computed_output, decimal=10)
 
 
@@ -101,8 +101,8 @@ def test_dot_real_commutativity():
     a = rng.random(15)
     b = rng.random(15)
     # a dot b = b dot a
-    output_ab = temp.dot_real(a, b)
-    output_ba = temp.dot_real(b, a)
+    output_ab = tmp.dot_real(a, b)
+    output_ba = tmp.dot_real(b, a)
     aae(output_ab, output_ba, decimal=10)
 
 
@@ -115,8 +115,8 @@ def test_dot_real_distributivity():
     b = rng.random(15)
     c = rng.random(15)
     # a dot (b + c) = (a dot b) + (a dot c)
-    output_a_bc = temp.dot_real(a, b + c)
-    output_ab_ac = temp.dot_real(a, b) + temp.dot_real(a, c)
+    output_a_bc = tmp.dot_real(a, b + c)
+    output_ab_ac = tmp.dot_real(a, b) + temp.dot_real(a, c)
     aae(output_a_bc, output_ab_ac, decimal=10)
 
 
@@ -130,8 +130,8 @@ def test_dot_real_scalar_multiplication():
     c1 = 5.6
     c2 = 9.1
     # (c1 a) dot (c2 b) = c1c2 (a dot b)
-    output_c1a_c2b = temp.dot_real(c1*a, c2*b)
-    output_c1c2_ab = c1*c2*temp.dot_real(a, b)
+    output_c1a_c2b = tmp.dot_real(c1*a, c2*b)
+    output_c1c2_ab = c1*c2*tmp.dot_real(a, b)
     aae(output_c1a_c2b, output_c1c2_ab, decimal=10)
 
 
@@ -142,7 +142,7 @@ def test_dot_complex_compare_numpy_dot():
     # use the random generator to create input parameters
     vector_1 = rng.random(13) + 1j*rng.random(13)
     vector_2 = rng.random(13) + 1j*rng.random(13)
-    output = temp.dot_complex(vector_1, vector_2)
+    output = tmp.dot_complex(vector_1, vector_2)
     output_numpy_dot = np.dot(vector_1, vector_2)
     aae(output, output_numpy_dot, decimal=10)
 
@@ -152,11 +152,11 @@ def test_outer_real_input_not_vector():
     a = np.linspace(5,10,8)
     B = np.ones((4,4))
     with pytest.raises(AssertionError):
-        temp.outer_real_simple(a, B)
+        tmp.outer_real_simple(a, B)
     with pytest.raises(AssertionError):
-        temp.outer_real_row(a, B)
+        tmp.outer_real_row(a, B)
     with pytest.raises(AssertionError):
-        temp.outer_real_column(a, B)
+        tmp.outer_real_column(a, B)
 
 
 def test_outer_real_compare_numpy_outer():
@@ -166,9 +166,9 @@ def test_outer_real_compare_numpy_outer():
     vector_1 = rng.random(13)
     vector_2 = rng.random(13)
     reference_output_numpy = np.outer(vector_1, vector_2)
-    computed_output_simple = temp.outer_real_simple(vector_1, vector_2)
-    computed_output_row = temp.outer_real_row(vector_1, vector_2)
-    computed_output_column = temp.outer_real_column(vector_1, vector_2)
+    computed_output_simple = tmp.outer_real_simple(vector_1, vector_2)
+    computed_output_row = tmp.outer_real_row(vector_1, vector_2)
+    computed_output_column = tmp.outer_real_column(vector_1, vector_2)
     aae(reference_output_numpy, computed_output_simple, decimal=10)
     aae(reference_output_numpy, computed_output_row, decimal=10)
     aae(reference_output_numpy, computed_output_column, decimal=10)
@@ -179,9 +179,9 @@ def test_outer_real_known_values():
     vector_1 = np.ones(5)
     vector_2 = np.arange(1,11)
     reference_output = np.resize(vector_2, (vector_1.size, vector_2.size))
-    computed_output_simple = temp.outer_real_simple(vector_1, vector_2)
-    computed_output_row = temp.outer_real_row(vector_1, vector_2)
-    computed_output_column = temp.outer_real_column(vector_1, vector_2)
+    computed_output_simple = tmp.outer_real_simple(vector_1, vector_2)
+    computed_output_row = tmp.outer_real_row(vector_1, vector_2)
+    computed_output_column = tmp.outer_real_column(vector_1, vector_2)
     aae(reference_output, computed_output_simple, decimal=10)
     aae(reference_output, computed_output_row, decimal=10)
     aae(reference_output, computed_output_column, decimal=10)
@@ -193,12 +193,12 @@ def test_outer_real_transposition():
     rng = np.random.default_rng(555799917665544441234)
     a = rng.random(8)
     b = rng.random(5)
-    a_outer_b_T_simple = temp.outer_real_simple(a, b).T
-    b_outer_a_simple = temp.outer_real_simple(b, a)
-    a_outer_b_T_row = temp.outer_real_row(a, b).T
-    b_outer_a_row = temp.outer_real_row(b, a)
-    a_outer_b_T_column = temp.outer_real_column(a, b).T
-    b_outer_a_column = temp.outer_real_column(b, a)
+    a_outer_b_T_simple = tmp.outer_real_simple(a, b).T
+    b_outer_a_simple = tmp.outer_real_simple(b, a)
+    a_outer_b_T_row = tmp.outer_real_row(a, b).T
+    b_outer_a_row = tmp.outer_real_row(b, a)
+    a_outer_b_T_column = tmp.outer_real_column(a, b).T
+    b_outer_a_column = tmp.outer_real_column(b, a)
     aae(a_outer_b_T_simple, b_outer_a_simple, decimal=10)
     aae(a_outer_b_T_row, b_outer_a_row, decimal=10)
     aae(a_outer_b_T_column, b_outer_a_column, decimal=10)
@@ -210,17 +210,17 @@ def test_outer_real_distributivity():
     a = rng.random(5)
     b = rng.random(5)
     c = rng.random(4)
-    a_plus_b_outer_c_simple = temp.outer_real_simple(a+b, c)
+    a_plus_b_outer_c_simple = tmp.outer_real_simple(a+b, c)
     a_outer_c_plus_b_outer_c_simple = (
-        temp.outer_real_simple(a, c) + temp.outer_real_simple(b, c)
+        tmp.outer_real_simple(a, c) + tmp.outer_real_simple(b, c)
         )
-    a_plus_b_outer_c_row = temp.outer_real_row(a+b, c)
+    a_plus_b_outer_c_row = tmp.outer_real_row(a+b, c)
     a_outer_c_plus_b_outer_c_row = (
-        temp.outer_real_row(a, c) + temp.outer_real_row(b, c)
+        tmp.outer_real_row(a, c) + tmp.outer_real_row(b, c)
         )
-    a_plus_b_outer_c_column = temp.outer_real_column(a+b, c)
+    a_plus_b_outer_c_column = tmp.outer_real_column(a+b, c)
     a_outer_c_plus_b_outer_c_column = (
-        temp.outer_real_column(a, c) + temp.outer_real_column(b, c)
+        tmp.outer_real_column(a, c) + tmp.outer_real_column(b, c)
         )
     aae(a_plus_b_outer_c_simple, a_outer_c_plus_b_outer_c_simple, decimal=10)
     aae(a_plus_b_outer_c_row, a_outer_c_plus_b_outer_c_row, decimal=10)
@@ -241,8 +241,8 @@ def test_outer_real_scalar_multiplication():
         'column' : outer_real_column
     }
     for function in ['simple', 'row', 'column']:
-        ca_outer_b.append(temp.outer_real[function](c*a, b))
-        a_outer_cb.append(temp.outer_real[function](a, c*b))
+        ca_outer_b.append(tmp.outer_real[function](c*a, b))
+        a_outer_cb.append(tmp.outer_real[function](a, c*b))
     aae(ca_outer_b[0], a_outer_cb[0], decimal=10)
     aae(ca_outer_b[1], a_outer_cb[1], decimal=10)
     aae(ca_outer_b[2], a_outer_cb[2], decimal=10)
@@ -260,7 +260,7 @@ def test_outer_real_ignore_complex():
     }
     computed_output = []
     for function in ['simple', 'row', 'column']:
-        computed_output.append(temp.outer_real[function](vector_1, vector_2))
+        computed_output.append(tmp.outer_real[function](vector_1, vector_2))
     aae(reference_output, computed_output[0], decimal=10)
     aae(reference_output, computed_output[1], decimal=10)
     aae(reference_output, computed_output[2], decimal=10)
@@ -275,14 +275,85 @@ def test_outer_complex_compare_numpy_outer():
     output_numpy_outer = np.outer(input1, input2)
     output = []
     for function in ['simple', 'row', 'column']:
-        output.append(temp.outer_complex(vector_1, vector_2, function))
+        output.append(tmp.outer_complex(vector_1, vector_2, function))
     aae(output[0], output_numpy_outer, decimal=10)
     aae(output[1], output_numpy_outer, decimal=10)
     aae(output[2], output_numpy_outer, decimal=10)
 
 
-#def test_outer_complex_invalid_function():
-#    'raise error for invalid function'
-#    for invalid_function in ['Simple', 'xxxxx', 'rows']:
-#        with pytest.raises(AssertionError):
-#            temp.outer_complex(np.ones(3), np.ones(3), invalid_function)
+def test_outer_complex_invalid_function():
+    'raise error for invalid function'
+    for invalid_function in ['Simple', 'xxxxx', 'rows']:
+        with pytest.raises(AssertionError):
+            tmp.outer_complex(np.ones(3), np.ones(3), invalid_function)
+
+
+# Hadamard product
+def test_hadamard_real_different_shapes():
+    'fail if input variables have different sizes'
+    a = np.linspace(5,10,8)
+    B = np.ones((4,4))
+    with pytest.raises(AssertionError):
+        tmp.hadamard_real(a, B)
+
+
+def test_hadamard_real_compare_asterisk():
+    'compare hadamard_real function with * operator'
+    # for vectors
+    # set random generator
+    rng = np.random.default_rng(11117665544444412)
+    # use the random generator to create input parameters
+    input1 = rng.random(18)
+    input2 = rng.random(18)
+    output = tmp.hadamard_real(input1, input2)
+    output_asterisk = input1*input2
+    aae(output, output_asterisk, decimal=10)
+    # for matrices
+    input1 = rng.random((5, 7))
+    input2 = rng.random((5, 7))
+    output = tmp.hadamard_real(input1, input2)
+    output_asterisk = input1*input2
+    aae(output, output_asterisk, decimal=10)
+
+
+def test_hadamard_real_ignore_complex():
+    'complex part of input must be ignored'
+    # for vectors
+    # set random generator
+    rng = np.random.default_rng(9999999917665544444412)
+    # use the random generator to create input parameters
+    input1 = rng.random(10)
+    input2 = rng.random(10) + 1j*np.ones(10)
+    output = tmp.hadamard_real(input1, input2)
+    output_reference = input1.real*input2.real
+    aae(output, output_reference, decimal=10)
+    # for matrices
+    input1 = rng.random((5, 7)) - 1j*np.ones((5,7))
+    input2 = rng.random((5, 7))
+    output = tmp.hadamard_real(input1, input2)
+    output_reference = input1.real*input2.real
+    aae(output, output_reference, decimal=10)
+
+
+def test_hadamard_complex_compare_asterisk():
+    'compare hadamard_complex function with * operator'
+    # for matrices
+    # set random generator
+    rng = np.random.default_rng(777799917665544444412)
+    input1 = rng.random((4, 3))
+    input2 = rng.random((4, 3))
+    output = tmp.hadamard_complex(input1, input2)
+    output_asterisk = input1*input2
+    aae(output, output_asterisk, decimal=10)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -198,7 +198,7 @@ def outer_real_column(x, y, check_input=True):
     return result
 
 
-def outer_complex(x, y, check_input=True):
+def outer_complex(x, y, check_input=True, function='simple'):
     '''
     Compute the outer product of x and y, where x and y are complex vectors.
 
@@ -210,12 +210,26 @@ def outer_complex(x, y, check_input=True):
     check_input : boolean
         If True, verify if the input is valid. Default is True.
 
+    function : string
+        Defines the outer_real function to be used. The possible
+        values are 'simple', 'row' and 'column'.
+
     Returns
     -------
     result : 2D array
         Outer product of x and y.
     '''
-    # Check input here
-    # Complete here
+
+
+
+    outer_real = {
+        'simple' : outer_real_simple,
+        'row' : outer_real_row,
+        'column' : outer_real_column
+    }
+
+
+    # use the syntax outer_real[function] to specify the
+    # the outer_real_* function.
 
     return result
