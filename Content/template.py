@@ -233,3 +233,52 @@ def outer_complex(x, y, check_input=True, function='simple'):
     # the outer_real_* function.
 
     return result
+
+# Hadamard product
+def hadamard_real(x, y, check_input=True):
+    '''
+    Compute the Hadamard (or entrywise) product of x and y, where
+    x and y may be real vectors or matrices having the same shape.
+    The imaginary parts are ignored.
+
+    The code uses a simple doubly nested loop to iterate on the arrays.
+
+    Parameters
+    ----------
+    x, y : arrays
+        Real vectors or matrices having the same shape.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array
+        Hadamard product of x and y.
+    '''
+
+
+    return result
+
+
+def hadamard_complex(x, y, check_input=True):
+    '''
+    Compute the Hadamard (or entrywise) product of x and y, where
+    x and y may be complex vectors or matrices having the same shape.
+
+    Parameters
+    ----------
+    x, y : arrays
+        Complex vectors or matrices having the same shape.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array
+        Hadamard product of x and y.
+    '''
+
+
+    return result
