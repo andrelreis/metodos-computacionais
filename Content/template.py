@@ -282,3 +282,297 @@ def hadamard_complex(x, y, check_input=True):
 
 
     return result
+
+## Operations with matrix
+
+# Matrix-vector product
+
+def matvec_real_simple(A, x, check_input=True):
+    '''
+    Compute the matrix-vector product of A and x, where
+    A in R^NxM and x in R^M. The imaginary parts are ignored.
+
+    The code uses a simple doubly nested "for" to iterate on the arrays.
+
+    Parameters
+    ----------
+    A : array 2D
+        NxM matrix with real elements.
+
+    x : array 1D
+        Real vector witn M elements.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array 1D
+        Product of A and x.
+    '''
+
+
+    return result
+
+
+def matvec_real_dot(A, x, check_input=True):
+    '''
+    Compute the matrix-vector product of A and x, where
+    A in R^NxM and x in R^M. The imaginary parts are ignored.
+
+    The code replaces a for by a dot product.
+
+    Parameters
+    ----------
+    A : array 2D
+        NxM matrix with real elements.
+
+    x : array 1D
+        Real vector witn M elements.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array 1D
+        Product of A and x.
+    '''
+
+
+    return result
+
+
+def matvec_real_columns(A, x, check_input=True):
+    '''
+    Compute the matrix-vector product of A and x, where
+    A in R^NxM and x in R^M. The imaginary parts are ignored.
+
+    The code replaces a for by a scalar-vector product.
+
+    Parameters
+    ----------
+    A : array 2D
+        NxM matrix with real elements.
+
+    x : array 1D
+        Real vector witn M elements.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : array 1D
+        Product of A and x.
+    '''
+
+
+    return result
+
+
+def matvec_complex(A, x, check_input=True, function='dot'):
+    '''
+    Compute the matrix-vector product of an NxM matrix A and
+    a Mx1 vector x.
+
+    Parameters
+    ----------
+    A : array 2D
+        NxM matrix.
+
+    x : array 1D
+        Mx1 vector.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    function : string
+        Defines the matvec_real function to be used. The possible
+        values are 'simple', 'dot' and 'columns'.
+
+    Returns
+    -------
+    result : array 1D
+        Product of A and x.
+    '''
+
+    matvec_real = {
+        'simple' : matvec_real_simple,
+        'dot' : matvec_real_dot,
+        'columns' : matvec_real_columns
+    }
+
+
+    # use the syntax matvec_real[function] to specify the
+    # the matvec_real_* function.
+
+
+    return result
+
+# matrix-matrix product
+
+def matmat_real_simple(A, B, check_input=True):
+    '''
+    Compute the matrix-matrix product of A and B, where
+    A in R^NxM and B in R^MxP. The imaginary parts are ignored.
+
+    The code uses a simple triply nested "for" to iterate on the arrays.
+
+    Parameters
+    ----------
+    A, B : 2D arrays
+        Real matrices.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : 2D array
+        Product of A and B.
+    '''
+
+
+    return result
+
+
+def matmat_real_dot(A, B, check_input=True):
+    '''
+    Compute the matrix-matrix product of A and B, where
+    A in R^NxM and B in R^MxP. The imaginary parts are ignored.
+
+    The code replaces one "for" by a dot product.
+
+    Parameters
+    ----------
+    A, B : 2D arrays
+        Real matrices.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : 2D array
+        Product of A and B.
+    '''
+
+
+    return result
+
+
+def matmat_real_rows(A, B, check_input=True):
+    '''
+    Compute the matrix-matrix product of A and B, where
+    A in R^NxM and B in R^MxP. The imaginary parts are ignored.
+
+    The code replaces two "fors" by a matrix-vector product defining
+    a row of the resultant matrix.
+
+    Parameters
+    ----------
+    A, B : 2D arrays
+        Real matrices.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : 2D array
+        Product of A and B.
+    '''
+
+
+    return result
+
+
+def matmat_real_columns(A, B, check_input=True):
+    '''
+    Compute the matrix-matrix product of A and B, where
+    A in R^NxM and B in R^MxP. The imaginary parts are ignored.
+
+    The code replaces two "fors" by a matrix-vector product defining
+    a column of the resultant matrix.
+
+    Parameters
+    ----------
+    A, B : 2D arrays
+        Real matrices.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : 2D array
+        Product of A and B.
+    '''
+
+
+    return result
+
+
+def matmat_real_outer(A, B, check_input=True):
+    '''
+    Compute the matrix-matrix product of A and B, where
+    A in R^NxM and B in R^MxP. The imaginary parts are ignored.
+
+    The code replaces two "fors" by an outer product.
+
+    Parameters
+    ----------
+    A, B : 2D arrays
+        Real matrices.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    Returns
+    -------
+    result : 2D array
+        Product of A and B.
+    '''
+
+
+    return result
+
+
+def matmat_complex(A, B, check_input=True, function='simple'):
+    '''
+    Compute the matrix-matrix product of A and B, where
+    A in C^NxM and B in C^MxP.
+
+    Parameters
+    ----------
+    A, B : 2D arrays
+        Complex matrices.
+
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+
+    function : string
+        Defines the matmat_real function to be used. The possible
+        values are 'simple', 'dot', 'rows', 'columns' or 'outer'.
+
+    Returns
+    -------
+    result : 2D array
+        Product of A and B.
+    '''
+
+    matmat_real = {
+        'simple' : matmat_real_simple,
+        'dot' : matmat_real_dot,
+        'rows' : matmat_real_rows,
+        'columns' : matmat_real_columns,
+        'outer' : matmat_real_outer
+    }
+
+
+    # use the syntax matmat_real[function] to specify the
+    # the matmat_real_* function.
+
+
+    return result
