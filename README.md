@@ -30,7 +30,7 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
 **Introdução**
-  - [x] Notação para vetores e matrizes [`0. notacoes.ipynb`]
+  - [x] Notação para vetores e matrizes [`0. notation.ipynb`]
 
 **1. Operações com vetores**
   - [x] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
@@ -40,26 +40,30 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
   - [x] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
 
 **2. Operações com matrizes**
+  - [x] Produto matriz-vetor [`2a. matrix-vector.ipynb`]
+  - [x] Produto matriz-matriz [`2b. matrix-matrix.ipynb`]   
 
-**3. Normas de vetores e matrizes**
+**3. FLOPS**
 
-**4. Estruturas matriciais**
+**4. Normas de vetores e matrizes**
 
-**5. Transformada de Fourier**
+**5. Estruturas matriciais**
 
-**6. Solução numérica de sistemas lineares**
+**6. Transformada de Fourier**
 
-**7. Autovalores e autovetores**
+**7. Solução numérica de sistemas lineares**
 
-**8. Decomposição em valores singulares**
+**8. Autovalores e autovetores**
 
-**9. Soluções numéricas de sistemas não-lineares**
+**9. Decomposição em valores singulares**
 
-**10. Interpolação e ajuste de curva**
+**10. Soluções numéricas de sistemas não-lineares**
 
-**11. Derivação numérica**
+**11. Interpolação e ajuste de curva**
 
-**12. Integração numérica**
+**12. Derivação numérica**
+
+**13. Integração numérica**
 
 ## Referências bibliográficas
 
