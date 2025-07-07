@@ -345,8 +345,151 @@ def test_hadamard_complex_compare_asterisk():
     output_asterisk = input1*input2
     aae(output, output_asterisk, decimal=10)
 
+### matrix-vector product
+def test_matvec_real_input_doesnt_match():
+    'fail when matrix columns doesnt match vector size'
+    A = np.ones((5,4))
+    x = np.ones(3)
+    with pytest.raises(AssertionError):
+        temp.matvec_real_simple(A, x)
+    with pytest.raises(AssertionError):
+        temp.matvec_real_dot(A, x)
+    with pytest.raises(AssertionError):
+        temp.matvec_real_columns(A, x)
 
 
+def test_matvec_real_functions_compare_numpy_dot():
+    'compare matvec_real_XXXX with numpy.dot'
+    matrix = np.ones((5,4))
+    vector = np.ones(4)
+    output_simple = temp.matvec_real_simple(matrix, vector)
+    output_dot = temp.matvec_real_dot(matrix, vector)
+    output_columns = temp.matvec_real_columns(matrix, vector)
+    output_numpy_dot = np.dot(matrix, vector)
+    aae(output_simple, output_numpy_dot, decimal=10)
+    aae(output_dot, output_numpy_dot, decimal=10)
+    aae(output_columns, output_numpy_dot, decimal=10)
+
+
+def test_matvec_real_functions_ignore_complex():
+    'complex part of input must be ignored'
+    matrix = 5*np.ones((5,4)) - 0.3j*np.ones((5,4))
+    vector = 6*np.ones(4) + 2j*np.ones(4)
+    output_simple = temp.matvec_real_simple(matrix, vector)
+    output_dot = temp.matvec_real_dot(matrix, vector)
+    output_columns = temp.matvec_real_columns(matrix, vector)
+    output_reference = np.dot(matrix.real, vector.real)
+    aae(output_simple, output_reference, decimal=10)
+    aae(output_dot, output_reference, decimal=10)
+    aae(output_columns, output_reference, decimal=10)
+
+
+def test_matvec_complex_compare_numpy_dot():
+    'compare matvec_complex with numpy.dot'
+    matrix = 5*np.ones((5,4)) - 0.3j*np.ones((5,4))
+    vector = 6*np.ones(4) + 2j*np.ones(4)
+    output_simple = temp.matvec_complex(matrix, vector, function='simple')
+    output_dot = temp.matvec_complex(matrix, vector, function='dot')
+    output_columns = temp.matvec_complex(matrix, vector, function='columns')
+    output_numpy_dot = np.dot(matrix, vector)
+    aae(output_simple, output_numpy_dot, decimal=10)
+    aae(output_dot, output_numpy_dot, decimal=10)
+    aae(output_columns, output_numpy_dot, decimal=10)
+
+
+def test_matvec_complex_invalid_function():
+    'must raise error for invalid function'
+    A = np.ones((5,4))
+    x = np.ones(4)
+    with pytest.raises(ValueError):
+        temp.matvec_complex(A, x, check_input=True, function='invalid-function')
+    with pytest.raises(ValueError):
+        temp.matvec_complex(A, x, check_input=True, function='column')
+    with pytest.raises(ValueError):
+        temp.matvec_complex(A, x, check_input=True, function='Dot')
+
+### matrix-matrix product
+
+def test_matmat_real_input_doesnt_match():
+    'fail when matrices dont match to compute the product'
+    A = np.ones((3,3))
+    B = np.ones((4,5))
+    with pytest.raises(AssertionError):
+        temp.matmat_real_simple(A, B, check_input=True)
+    with pytest.raises(AssertionError):
+        temp.matmat_real_dot(A, B, check_input=True)
+    with pytest.raises(AssertionError):
+        temp.matmat_real_rows(A, B, check_input=True)
+    with pytest.raises(AssertionError):
+        temp.matmat_real_columns(A, B, check_input=True)
+    with pytest.raises(AssertionError):
+        temp.matmat_real_outer(A, B, check_input=True)
+
+
+def test_matmat_real_functions_compare_numpy_dot():
+    'compare matmat_real_XXXX with numpy.dot'
+    rng = np.random.default_rng(1234599999777772311155)
+    matrix_1 = np.ones((3,3))
+    matrix_2 = np.ones((3,5))
+    output_simple = temp.matmat_real_simple(matrix_1, matrix_2)
+    output_dot = temp.matmat_real_dot(matrix_1, matrix_2)
+    output_rows = temp.matmat_real_rows(matrix_1, matrix_2)
+    output_columns = temp.matmat_real_columns(matrix_1, matrix_2)
+    output_outer = temp.matmat_real_outer(matrix_1, matrix_2)
+    reference = np.dot(matrix_1, matrix_2)
+    aae(output_simple, reference, decimal=10)
+    aae(output_dot, reference, decimal=10)
+    aae(output_rows, reference, decimal=10)
+    aae(output_columns, reference, decimal=10)
+    aae(output_outer, reference, decimal=10)
+
+
+def test_matmat_real_functions_ignore_complex():
+    'complex part of input must be ignored'
+    rng = np.random.default_rng(7623012345999997777723)
+    matrix_1 = np.ones((5,3))
+    matrix_2 = 6*np.ones((3,5)) - 0.7j*np.ones((3,5))
+    output_simple = temp.matmat_real_simple(matrix_1, matrix_2)
+    output_dot = temp.matmat_real_dot(matrix_1, matrix_2)
+    output_rows = temp.matmat_real_rows(matrix_1, matrix_2)
+    output_columns = temp.matmat_real_columns(matrix_1, matrix_2)
+    output_outer = temp.matmat_real_outer(matrix_1, matrix_2)
+    reference = np.dot(matrix_1.real, matrix_2.real)
+    aae(output_simple, reference, decimal=10)
+    aae(output_dot, reference, decimal=10)
+    aae(output_rows, reference, decimal=10)
+    aae(output_columns, reference, decimal=10)
+    aae(output_outer, reference, decimal=10)
+
+
+def test_matmat_complex_compare_numpy_dot():
+    'compare matmat_complex with numpy.dot'
+    rng = np.random.default_rng(87900054312345999997777723)
+    matrix_1 = 10*np.ones((5,3)) - 5j*np.ones((5,3))
+    matrix_2 = 6*np.ones((3,5)) - 0.7j*np.ones((3,5))
+    output_simple = temp.matmat_complex(matrix_1, matrix_2, function='simple')
+    output_dot = temp.matmat_complex(matrix_1, matrix_2, function='dot')
+    output_rows = temp.matmat_complex(matrix_1, matrix_2, function='rows')
+    output_columns = temp.matmat_complex(matrix_1, matrix_2, function='columns')
+    output_outer = temp.matmat_complex(matrix_1, matrix_2, function='outer')
+    reference = np.dot(matrix_1, matrix_2)
+    aae(output_simple, reference, decimal=10)
+    aae(output_dot, reference, decimal=10)
+    aae(output_rows, reference, decimal=10)
+    aae(output_columns, reference, decimal=10)
+    aae(output_outer, reference, decimal=10)
+
+
+def test_matmat_complex_invalid_function():
+    'must raise error for invalid function'
+    A = np.ones((5,4))
+    B = np.ones((4,3))
+    with pytest.raises(ValueError):
+        temp.matmat_complex(A, B, check_input=True, function='invalid-function')
+    with pytest.raises(ValueError):
+        temp.matmat_complex(A, B, check_input=True, function='column')
+    with pytest.raises(ValueError):
+        temp.matmat_complex(A, B, check_input=True, function='Dot')
 
 
 
