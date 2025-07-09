@@ -212,7 +212,7 @@ def outer_complex(x, y, check_input=True, function='simple'):
 
     function : string
         Defines the outer_real function to be used. The possible
-        values are 'simple', 'row' and 'column'.
+        values are 'simple', 'row' and 'column'. 
 
     Returns
     -------
