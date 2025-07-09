@@ -44,8 +44,11 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
   - [x] Produto matriz-matriz [`2b. matrix-matrix.ipynb`]   
 
 **3. FLOPS**
+  - [x] Flops [`3. flops.ipynb`]
 
 **4. Normas de vetores e matrizes**
+  - [x] Normas de vetores [`4a. vector-norm.ipynb`]
+  - [x] Normas matriciais [`4b. matrix-norm.ipynb`]
 
 **5. Estruturas matriciais**
 
