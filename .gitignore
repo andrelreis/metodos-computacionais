@@ -9,6 +9,7 @@ manuscript/figures/*-eps-converted-to.pdf
 manuscript/output/
 .env
 */.ipynb_checkpoints/
+.~lock. Apresentacao_curso.odp#
 
 
 *.virtual_documents/
