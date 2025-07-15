@@ -25,6 +25,8 @@ manuscript/output/
 #.blg
 # Exemplos
 
+.~lock.
+
 *.abs
 *.synctex.gz
 *.fls
