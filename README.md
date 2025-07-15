@@ -51,6 +51,8 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
   - [x] Normas matriciais [`4b. matrix-norm.ipynb`]
 
 **5. Estruturas matriciais**
+  - [x] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
+  - [x] Matriz triangular [`5b. triangular-matrices.ipynb`] 
 
 **6. Transformada de Fourier**
 
