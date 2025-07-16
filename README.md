@@ -52,8 +52,10 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 
 **5. Estruturas matriciais**
   - [x] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
-  - [x] Matriz triangular [`5b. triangular-matrices.ipynb`] 
-
+  - [x] Matriz triangular [`5b. triangular-matrices.ipynb`]
+  - [x] Matriz em bloco [`5c. block-matrices.ipynb`]
+  - [x] Matriz de Permutação [`5d. permutation-matrices.ipynb`]
+  
 **6. Transformada de Fourier**
 
 **7. Solução numérica de sistemas lineares**
