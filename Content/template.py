@@ -577,32 +577,6 @@ def matmat_complex(A, B, check_input=True, function='simple'):
 
     return result
 
-## Vector norms
-def vec_norm(x, p, check_input=True):
-    '''
-    Compute the p-norm of a given real vector 'x'.
-
-    Parameters
-    ----------
-    x : numpy array 1d
-        Vector for which the norm will be computed.
-    p : positive integer
-        Positive integer defining the norm. The possible values 
-        0, 1 and 2 define the inf-, 1- and 2-norm, respectively.
-    check_input : boolean
-        If True, verify if the input is valid. Default is True.
-
-    Returns
-    -------
-    result : positive scalar
-        Positive scalar representing the computed p-norm.
-    '''
-
-    # create your code here
-    
-    return result
-
-
 ## Triangular matrices
 def matvec_triu_prod3(U, x, check_input=True):
     '''
@@ -658,7 +632,7 @@ def matvec_triu_prod5(U, x, check_input=True):
     
     return result
 
-def matvec_triu_prod8(L, x, check_input=True):
+def matvec_tril_prod8(L, x, check_input=True):
     '''
     Compute the product of an lower triangular matrix L 
     and a vector x. All elements are real numbers.
@@ -685,7 +659,7 @@ def matvec_triu_prod8(L, x, check_input=True):
     
     return result
 
-def matvec_triu_prod10(U, x, check_input=True):
+def matvec_tril_prod10(L, x, check_input=True):
     '''
     Compute the product of an lower triangular matrix L 
     and a vector x. All elements are real numbers.
