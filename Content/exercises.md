@@ -10,8 +10,8 @@
 - [x] `matrix-norms.ipynb` (optional) : implement the `mat_norm` function and its corresponding tests.
 - [x] `triangular_matrices.ipynb` : implement the functions `matvec_triu_prod3`, `matvec_triu_prod5`, `matvec_tril_prod8` and `matvec_tril_prod10` defined by, respectively, the Algorithms 3, 5, 8 and 10.
 - [ ] `fourier_1D_4.ipynb` : implement the functions `DFT_matrix`, `fft1D` and `ifft1D`, as well as the corresponding tests.
-- [ ] `triangular_systems.ipynb` : implement a function `triu_system` for solving a triangular system by back substitution and create at least two tests.
-- [ ] `triangular_systems.ipynb` : implement a function `tril_system` for solving a triangular system by forward substitution and create at least two tests.
+- [x] `triangular_systems.ipynb` : implement a function `triu_system` for solving a triangular system by back substitution and create at least two tests.
+- [x] `triangular_systems.ipynb` : implement a function `tril_system` for solving a triangular system by forward substitution and create at least two tests.
 - [ ] `gauss-elim-pivoting.ipynb` : implement the function `Gauss_elim` and at least three tests.
 - [ ] `lu_decomp.ipynb` : implement the functions `lu_decomp` and `lu_solve`, as well as the corresponding tests.
 - [ ] `lu_decomp_pivoting.ipynb` : implement the functions `lu_decomp_pivoting` and `lu_solve_pivoting`, as well as the corresponding tests.
