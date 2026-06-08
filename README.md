@@ -2,7 +2,7 @@
 
 Disciplina obrigatória ministrada ao Programa de Pós-Graduação em Geofísica do Observatório Nacional (ON/MCTI).
 
-**Professor**: [André Luis A. Reis](https://www.pinga-lab.org/people/andre.html)
+**Professor**: [André Luis A. Reis](https://sipos.on.br/geofisica/frontend/docentes/index.php?idd=57)
 
 **E-mails:** reisandreluis@on.br / andre.reis@gmail.com
 
@@ -10,8 +10,7 @@ Disciplina obrigatória ministrada ao Programa de Pós-Graduação em Geofísica
 
 ## Ementa
 
-Primeiros passos em Python. Aplicação: Filtro de média móvel simples. Operações matriciais básicas. Matrizes especiais. Solução numérica de sistemas lineares: Introdução a sistemas lineares - sistemas lineares especiais - Eliminação Gaussiana - Decomposição LU - Decomposição LDLT - Decomposição de Cholesky - Mínimos quadrados. Aplicação: Rede gravimétrica simples. Solução
-numérica de sistemas não-lineares: Método de Newton, Método da descida mais íngreme, Método de Gauss-Newton, Método de Levenberg-Marquardt. Aplicação: Estimativa das coordenadas de um epicentro. Interpolação: Método de Lagrange, Método de Neville, Ajuste polinomial. Aplicação: Gridagem de uma anomalia de gravidade. Solução numérica de equações diferenciais: Diferenças finitas. Aplicação: Simulação de um decaimento exponencial simples. Integração numérica: Fórmulas de Newton-Cotes, Quadratura Gaussiana. Aplicação: Simulação de uma perfilagem sísmica vertical. Transformadas: Transformada de Fourier, Transformada de Hilbert. Aplicação: Amplitude do Sinal Analítico 2D de um perfil de anomalia de campo total.
+Primeiros passos em Python. Aplicação: Filtro de média móvel simples. Operações matriciais básicas. Matrizes especiais. Solução numérica de sistemas lineares: Introdução a sistemas lineares - sistemas lineares especiais - Eliminação Gaussiana - Decomposição LU - Decomposição LDLT - Decomposição de Cholesky - Mínimos quadrados. Aplicação: Rede gravimétrica simples. Solução numérica de sistemas não-lineares: Método de Newton, Método da descida mais íngreme, Método de Gauss-Newton, Método de Levenberg-Marquardt. Aplicação: Estimativa das coordenadas de um epicentro. Interpolação: Método de Lagrange, Método de Neville, Ajuste polinomial. Aplicação: Gridagem de uma anomalia de gravidade. Solução numérica de equações diferenciais: Diferenças finitas. Aplicação: Simulação de um decaimento exponencial simples. Integração numérica: Fórmulas de Newton-Cotes, Quadratura Gaussiana. Aplicação: Simulação de uma perfilagem sísmica vertical. Transformadas: Transformada de Fourier, Transformada de Hilbert. Aplicação: Amplitude do Sinal Analítico 2D de um perfil de anomalia de campo total.
 
 Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à Geofísica](https://www.gov.br/observatorio/pt-br/assuntos/programas-academicos/pos-graduacao-em-geofisica/documentos/ementas/metodos_computacionais_aplicados_a_geofisica_rev.pdf)
 
@@ -30,32 +29,32 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
 **Introdução**
-  - [x] Notação para vetores e matrizes [`0. notation.ipynb`]
+  - [ ] Notação para vetores e matrizes [`0. notation.ipynb`]
 
 **1. Operações com vetores**
-  - [x] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
-  - [x] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
-  - [x] Produto escalar entre vetores [`1c. dot-product.ipynb`]
-  - [x] Produto externo entre vetores [`1d. outer-product.ipynb`]
-  - [x] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
+  - [ ] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
+  - [ ] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
+  - [ ] Produto escalar entre vetores [`1c. dot-product.ipynb`]
+  - [ ] Produto externo entre vetores [`1d. outer-product.ipynb`]
+  - [ ] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
 
 **2. Operações com matrizes**
-  - [x] Produto matriz-vetor [`2a. matrix-vector.ipynb`]
-  - [x] Produto matriz-matriz [`2b. matrix-matrix.ipynb`]   
+  - [ ] Produto matriz-vetor [`2a. matrix-vector.ipynb`]
+  - [ ] Produto matriz-matriz [`2b. matrix-matrix.ipynb`]   
 
 **3. FLOPS**
-  - [x] Flops [`3. flops.ipynb`]
+  - [ ] Flops [`3. flops.ipynb`]
 
 **4. Normas de vetores e matrizes**
-  - [x] Normas de vetores [`4a. vector-norm.ipynb`]
-  - [x] Normas matriciais [`4b. matrix-norm.ipynb`]
+  - [ ] Normas de vetores [`4a. vector-norm.ipynb`]
+  - [ ] Normas matriciais [`4b. matrix-norm.ipynb`]
 
 **5. Estruturas matriciais**
-  - [x] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
-  - [x] Matriz triangular [`5b. triangular-matrices.ipynb`]
-  - [x] Matriz em bloco [`5c. block-matrices.ipynb`]
-  - [x] Matriz de Permutação [`5d. permutation-matrices.ipynb`]
-  
+  - [ ] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
+  - [ ] Matriz triangular [`5b. triangular-matrices.ipynb`]
+  - [ ] Matriz em bloco [`5c. block-matrices.ipynb`]
+  - [ ] Matriz de Permutação [`5d. permutation-matrices.ipynb`]
+
 **6. Transformada de Fourier**
 
 **7. Solução numérica de sistemas lineares**
