@@ -6,7 +6,7 @@ Disciplina obrigatória ministrada ao Programa de Pós-Graduação em Geofísica
 
 **E-mails:** reisandreluis@on.br / andre.reis@gmail.com
 
->**Aviso:** O material disponibilizado neste repositório está em constante desenvolvimento e, portanto, o Observatório Nacional e a coordenação de pós-graduação não possuem qualquer responsabilidade sobre este conteúdo. As aulas não serão gravadas.
+>**Aviso:** O material disponibilizado neste repositório está em constante desenvolvimento e, portanto, o Observatório Nacional e a coordenação de pós-graduação não possuem qualquer responsabilidade sobre este conteúdo. As aulas não serão gravadas. Todo o material didático e computacional está localizado na pasta 'Content'.
 
 ## Ementa
 
@@ -29,27 +29,48 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
-**Basic operations vector**
+**Introdução**
+  - [x] Notação para vetores e matrizes [`0. notation.ipynb`]
 
-**Basic operations Matrix**
+**1. Operações com vetores**
+  - [x] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
+  - [x] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
+  - [x] Produto escalar entre vetores [`1c. dot-product.ipynb`]
+  - [x] Produto externo entre vetores [`1d. outer-product.ipynb`]
+  - [x] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
 
-**Fourier Transform**
+**2. Operações com matrizes**
+  - [x] Produto matriz-vetor [`2a. matrix-vector.ipynb`]
+  - [x] Produto matriz-matriz [`2b. matrix-matrix.ipynb`]   
 
-**Structured matrices**
+**3. FLOPS**
+  - [x] Flops [`3. flops.ipynb`]
 
-**Numerical solutions of Linear Systems**
+**4. Normas de vetores e matrizes**
+  - [x] Normas de vetores [`4a. vector-norm.ipynb`]
+  - [x] Normas matriciais [`4b. matrix-norm.ipynb`]
 
-**Eigenvalues and Eigenvectors**
+**5. Estruturas matriciais**
+  - [x] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
+  - [x] Matriz triangular [`5b. triangular-matrices.ipynb`]
+  - [x] Matriz em bloco [`5c. block-matrices.ipynb`]
+  - [x] Matriz de Permutação [`5d. permutation-matrices.ipynb`]
+  
+**6. Transformada de Fourier**
 
-**Singular values decomposition**
+**7. Solução numérica de sistemas lineares**
 
-**Numerical solutions of nonlinear systems**
+**8. Autovalores e autovetores**
 
-**Interpolation and curve fitting**
+**9. Decomposição em valores singulares**
 
-**Numerical integration**
+**10. Soluções numéricas de sistemas não-lineares**
 
+**11. Interpolação e ajuste de curva**
 
+**12. Derivação numérica**
+
+**13. Integração numérica**
 
 ## Referências bibliográficas
 
