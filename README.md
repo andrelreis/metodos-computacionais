@@ -29,17 +29,17 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 >**Aviso:** Os códigos aqui apresentados são parte de uma disciplina e sua usabilidade é, consideravelmente, limitada a nível de pesquisa e desenvolvimento. A instituição não tem qualquer responsabilidade sobre a aplicação dos códigos aqui apresentados, tanto a nível acadêmico quanto profissional.
 
 **Introdução**
-  - [ ] Notação para vetores e matrizes [`0. notation.ipynb`]
+  - [X] Notação para vetores e matrizes [`0. notation.ipynb`]
 
 **1. Operações com vetores**
-  - [ ] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
-  - [ ] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
-  - [ ] Produto escalar entre vetores [`1c. dot-product.ipynb`]
-  - [ ] Produto externo entre vetores [`1d. outer-product.ipynb`]
-  - [ ] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
+  - [X] Produto escalar-vetor [`1a. escalar-vetor.ipynb`]
+  - [X] Tempo de execução de funções [`1b. tempo-escalar-vetor.ipynb`]
+  - [X] Produto escalar entre vetores [`1c. dot-product.ipynb`]
+  - [X] Produto externo entre vetores [`1d. outer-product.ipynb`]
+  - [X] Produto elemento a elemento [`1e. hadamard-product.ipynb`]
 
 **2. Operações com matrizes**
-  - [ ] Produto matriz-vetor [`2a. matrix-vector.ipynb`]
+  - [X] Produto matriz-vetor [`2a. matrix-vector.ipynb`]
   - [ ] Produto matriz-matriz [`2b. matrix-matrix.ipynb`]   
 
 **3. FLOPS**
