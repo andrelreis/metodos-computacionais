@@ -1,13 +1,11 @@
 # Exercises
 
-- [ ] `dot.ipynb` : implement the `dot_real` and `dot_complex` functions.
-- [ ] `hadamard.ipynb` : implement the `hadamard_real` and `hadamard_complex` functions.
-- [ ] `outer.ipynb` : implement the `outer_real_simple`, `outer_real_row`, `outer_real_column` and `outer_complex` functions.
-- [ ] `vector-norms.ipynb` : implement the `vec_norm` function and its corresponding tests.
-- [ ] `matrix-vector.ipynb` : implement the `matvec_real_simple`, `matvec_real_dot`, `matvec_real_columns` and `matvec_complex` functions.
+- [X] `scalar_vector.ipynb`: implement the `scalar_vector_complex` function.
+- [X] `dot.ipynb` : implement the `dot_real` and `dot_complex` functions.
+- [X] `outer.ipynb` : implement the `outer_real_simple`, `outer_real_row`, `outer_real_column` and `outer_complex` functions.
+- [X] `hadamard.ipynb` : implement the `hadamard_real` and `hadamard_complex` functions.
+- [X] `matrix-vector.ipynb` : implement the `matvec_real_simple`, `matvec_real_dot`, `matvec_real_columns` and `matvec_complex` functions. 
 - [ ] `matrix-matrix.ipynb` : implement the `matmat_real_simple`, `matmat_real_dot`, `matmat_real_rows`, `matmat_real_columns`, `matmat_real_outer` and `matmat_complex` functions.
-- [ ] `vector-norms.ipynb` (optional) : implement the `vec_norm` function and its corresponding tests.
-- [ ] `matrix-norms.ipynb` (optional) : implement the `mat_norm` function and its corresponding tests.
 - [ ] `triangular_matrices.ipynb` : implement the functions `matvec_triu_prod3`, `matvec_triu_prod5`, `matvec_tril_prod8` and `matvec_tril_prod10` defined by, respectively, the Algorithms 3, 5, 8 and 10.
 - [ ] `fourier_1D_4.ipynb` : implement the functions `DFT_matrix`, `fft1D` and `ifft1D`, as well as the corresponding tests.
 - [ ] `triangular_systems.ipynb` : implement a function `triu_system` for solving a triangular system by back substitution and create at least two tests.

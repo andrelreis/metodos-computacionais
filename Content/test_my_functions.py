@@ -6,6 +6,8 @@ import my_functions as mf
 # Scalar-vector
 def test_scalar_vec_real_a_not_scalar():
     'fail if a is not a scalar'
+    # Correct input
+    a0 = 1.
     # 2d array
     a1 = np.ones((3,2))
     # list
@@ -13,7 +15,7 @@ def test_scalar_vec_real_a_not_scalar():
     # tuple
     a3 = (4, 8.2)
     vector = np.arange(4)
-    for ai in [a1, a2, a3]:
+    for ai in [a0, a1, a2, a3]:
         with pytest.raises(AssertionError):
             mf.scalar_vec_real(ai, vector)
 
