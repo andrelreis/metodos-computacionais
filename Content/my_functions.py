@@ -1115,3 +1115,81 @@ def fourier_series_complex(x, c0, cn):
         fourier_series += cni_conj*np.exp(-1j*(ni+1)*x)
 
     return fourier_series
+
+## Gauss elimination 
+def gauss_elim(A, y, check_input=True):
+    '''
+    Compute the equivalent triangular system for a system Ax = y.
+    
+    Parameters
+    ----------
+    A : numpy narray 2d
+        Full square matrix of the linear system.
+    y : numpy array 1d
+        Independent vector of the linear system.
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+    Returns
+    -------
+    C[:, :N] : numpy array 2d
+        Upper triangular matrix of the equivalent system.
+    C[:,N] : numpy array 1d
+        Independent vector of the equivalent system.
+    '''
+    N = A.shape[0]
+    if check_input is True:
+        assert A.ndim == 2, 'A must be a matrix'
+        assert y.ndim == 1, 'y must be a vector'
+        assert A.shape[1] == N, 'A must be square'
+        assert y.size == N, 'A columns must be equal to y size'
+    # create matrix C by stacking A and y
+    C = np.column_stack((A.copy(),y.copy()))
+    for k in range(1,N):
+        # permutation step (computation of C tilde - eq. 3)
+        p, C = permut(C, k-1)
+        # assert the pivot is nonzero
+        assert C[k-1,k-1] != 0., 'null pivot!'
+        # calculate the Gauss multipliers and store them 
+        # in the lower part of C (equations 5 and 7)
+        C[k:,k-1] /= C[k-1,k-1]
+        # zeroing of the elements in the (k-1)th column (equation 8)
+        C[k:,k:] -= np.outer(C[k:,k-1],C[k-1,k:])
+    # return the equivalent triangular system and Gauss multipliers
+    return np.triu(C[:,:N]), C[:,N]
+
+## LU decomposition
+def lu_decomp(A, check_input=True):
+    '''
+    Compute the LU decomposition for a matrix A.
+    
+    Parameters
+    ----------
+    A : numpy narray 2d
+        Full square matrix of the linear system.
+    check_input : boolean
+        If True, verify if the input is valid. Default is True.
+    Returns
+    -------
+    C : numpy array 2d
+        Full square matrix containing the element of L below the 
+        main diagonal and the elements of U in the upper triangle 
+        (including the elements on the main diagonal).
+    '''
+    N = A.shape[0]
+    if check_input is True:
+        assert A.ndim == 2, 'A must be a matrix'
+        assert A.shape[1] == N, 'A must be square'
+    # create matrix C as a copy of A
+    C = A.copy()
+    for k in range(1,N):
+        # assert the pivot is nonzero
+        assert C[k-1,k-1] != 0., 'null pivot!'
+        # calculate the Gauss multipliers and store them 
+        # in the lower part of C
+        C[k:,k-1] /= C[k-1,k-1] 
+        # zeroing of the elements in the (k-1)th column
+        C[k:,k:] -= np.outer(C[k:,k-1],C[k-1,k:]) 
+    return C
+
+
+

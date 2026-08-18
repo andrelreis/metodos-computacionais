@@ -47,17 +47,24 @@ Versão oficial do conteúdo da disciplina: [Métodos Computacionais aplicado à
 
 **4. Normas de vetores e matrizes**
   - [X] Normas de vetores [`4a. vector-norm.ipynb`]
-  - [ ] Normas matriciais [`4b. matrix-norm.ipynb`]
+  - [X] Normas matriciais [`4b. matrix-norm.ipynb`]
 
 **5. Estruturas matriciais**
-  - [ ] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
-  - [ ] Matriz triangular [`5b. triangular-matrices.ipynb`]
-  - [ ] Matriz em bloco [`5c. block-matrices.ipynb`]
-  - [ ] Matriz de Permutação [`5d. permutation-matrices.ipynb`]
+  - [X] Matriz diagonal [`5a. diagonal-matrices.ipynb`]
+  - [X] Matriz triangular [`5b. triangular-matrices.ipynb`]
+  - [X] Matriz em bloco [`5c. block-matrices.ipynb`]
+  - [X] Matriz de Permutação [`5d. permutation-matrices.ipynb`]
 
 **6. Transformada de Fourier**
+  - [X] Séries de Fourier [`6a. fourier_series.ipynb`]
+  - [X] Introdução à Transformada de Fourier [`6b. intro_fourier_1D.ipynb`]
 
 **7. Solução numérica de sistemas lineares**
+  - [X] Sistemas Triangulares [`7a. triangular_systems.ipynb`]
+  - [X] Introdução Eliminação de Gauus [`7b. gauss-elim-intro.ipynb`]
+  - [X] Eliminação de Gauss como um outer [`7c. gauss-elim-outer.ipynb`]
+  - [X] Eliminação de Gauss com pivotamento [`7d gauss-elim-pivoting.ipynb`]
+  - [X] Decomposição LU [`7e. lu_decomp.ipynb`]
 
 **8. Autovalores e autovetores**
 
